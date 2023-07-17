@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_registry_m2m_category">
+    <sys_ux_registry_m2m_category action="INSERT_OR_UPDATE">
+        <experience_category display_value="Workspace">afb4e3e173322010f0ca1e666bf6a726</experience_category>
+        <page_registry display_value="Business Card Requests">f658cc381fc43110e53aec0edf05a771</page_registry>
+        <sys_class_name>sys_ux_registry_m2m_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:48:32</sys_created_on>
+        <sys_id>3658cc38b8c431103998ee71b565e373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name>sys_ux_registry_m2m_category_3658cc38b8c431103998ee71b565e373</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:48:32</sys_updated_on>
+    </sys_ux_registry_m2m_category>
+</record_update>

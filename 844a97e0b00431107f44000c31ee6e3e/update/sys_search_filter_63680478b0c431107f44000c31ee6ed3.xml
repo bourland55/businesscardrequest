@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Business Card Requests">ef680478b0c431107f44000c31ee6eb7</ais_search_source>
+        <label>Business Card Requests</label>
+        <name>Business Card Requests</name>
+        <order>100</order>
+        <search_context_config display_value="Business Card Requests AI Search Configuration">3658cc38cfc431103de819f438b3ac72</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:48:48</sys_created_on>
+        <sys_id>63680478b0c431107f44000c31ee6ed3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Business Card Requests</sys_name>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name>sys_search_filter_63680478b0c431107f44000c31ee6ed3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:48:48</sys_updated_on>
+    </sys_search_filter>
+</record_update>

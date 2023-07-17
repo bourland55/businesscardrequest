@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_business_c_0.cardUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cardUtils</name>
+        <script><![CDATA[var cardUtils = Class.create();
+cardUtils.prototype = {
+	initialize: function() {
+	},
+
+	getAddress: function(){
+
+		var user = gs.getUser();
+		var id = user.getID();
+		var grUser = new GlideRecord('sys_user');
+		grUser.get(id);
+
+		//gs.info('CoiUtils2 - getManager()' + 'user = ' + id + 'manager =' + manager);
+		var address = '';
+		address = grUser.street + " " + grUser.state +  " " + grUser.zip;
+
+		//gs.info ('cardUtils address' + address);
+
+		return address;
+	},
+
+
+	getPhone: function(){
+
+		var user = gs.getUser();
+		var id = user.getID();
+		var grUser = new GlideRecord('sys_user');
+		grUser.get(id);
+
+		//gs.info('CoiUtils2 - getManager()' + 'user = ' + id + 'manager =' + manager);
+		var phone = grUser.phone;
+
+		//gs.info ('cardUtils phone' + phone);
+
+		return phone;
+	},
+	type: 'cardUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:30:50</sys_created_on>
+        <sys_id>d7163fe0b08431107f44000c31ee6e91</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>cardUtils</sys_name>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name>sys_script_include_d7163fe0b08431107f44000c31ee6e91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:59:52</sys_updated_on>
+    </sys_script_include>
+</record_update>

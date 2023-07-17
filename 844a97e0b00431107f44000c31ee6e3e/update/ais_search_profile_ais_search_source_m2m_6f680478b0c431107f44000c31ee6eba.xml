@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="Business Card Requests search profile">0f58cc382cc4311080568c3fb077c476</profile>
+        <search_source display_value="Business Card Requests">ef680478b0c431107f44000c31ee6eb7</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:48:47</sys_created_on>
+        <sys_id>6f680478b0c431107f44000c31ee6eba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Business Card Requests search profile.Business Card Requests</sys_name>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_6f680478b0c431107f44000c31ee6eba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:48:47</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

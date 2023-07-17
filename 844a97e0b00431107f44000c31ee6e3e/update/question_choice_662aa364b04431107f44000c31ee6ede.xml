@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>300</order>
+        <published_ref/>
+        <question display_value="What style do you choose?">d5072f60b04431107f44000c31ee6ec4</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 14:36:34</sys_created_on>
+        <sys_id>662aa364b04431107f44000c31ee6ede</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Style 3</sys_name>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name>question_choice_662aa364b04431107f44000c31ee6ede</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 14:36:34</sys_updated_on>
+        <text>Style 3</text>
+        <value>style_3</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=662aa364b04431107f44000c31ee6ede"/>
+</record_update>

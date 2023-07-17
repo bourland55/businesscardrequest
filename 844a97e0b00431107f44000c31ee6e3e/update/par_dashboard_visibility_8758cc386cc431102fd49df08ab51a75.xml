@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="Business Card Requests">be58cc3804c431108022e39a35aab970</dashboard>
+        <experience display_value="Business Card Requests">f658cc381fc43110e53aec0edf05a771</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:48:30</sys_created_on>
+        <sys_id>8758cc386cc431102fd49df08ab51a75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name>par_dashboard_visibility_8758cc386cc431102fd49df08ab51a75</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:48:30</sys_updated_on>
+    </par_dashboard_visibility>
+</record_update>

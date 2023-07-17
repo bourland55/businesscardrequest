@@ -1,0 +1,2792 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>BCR Flow</description>
+        <internal_name>business_card_request</internal_name>
+        <label_cache>[{"name":"5d6d3e62-0bc9-4178-89f1-5d0fea1a681f.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"5d6d3e62-0bc9-4178-89f1-5d0fea1a681f.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"5d6d3e62-0bc9-4178-89f1-5d0fea1a681f.table_name","label":"9 - Update Record➛Business Card Requests Table","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5d6d3e62-0bc9-4178-89f1-5d0fea1a681f.record","label":"9 - Update Record➛Business Card Requests Record","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c8b28d14-f958-46ac-ac0c-c92842a4c58a.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c8b28d14-f958-46ac-ac0c-c92842a4c58a.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c8b28d14-f958-46ac-ac0c-c92842a4c58a.table_name","label":"6 - Update Record➛Business Card Requests Table","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c8b28d14-f958-46ac-ac0c-c92842a4c58a.record","label":"6 - Update Record➛Business Card Requests Record","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff27291e-ef90-47da-b609-fa3805b17693.__dont_treat_as_error__","label":"8 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff27291e-ef90-47da-b609-fa3805b17693.__action_status__","label":"8 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff27291e-ef90-47da-b609-fa3805b17693.email","label":"8 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ed3da04-a67d-4678-9bba-d8f263379681.__dont_treat_as_error__","label":"7 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"5ed3da04-a67d-4678-9bba-d8f263379681.__action_status__","label":"7 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"5ed3da04-a67d-4678-9bba-d8f263379681.Table","label":"7 - Create Task➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ed3da04-a67d-4678-9bba-d8f263379681.Record","label":"7 - Create Task➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.address_1","label":"Trigger - Record Created➛Business Card Requests Record➛Address","reference":"","reference_display":"Address","type":"string","base_type":"string","parent_table_name":"x_snc_business_c_0_business_card_requests","column_name":"address_1"},{"name":"67e72342-259f-4535-9df5-9de61e09b134.__dont_treat_as_error__","label":"5 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"67e72342-259f-4535-9df5-9de61e09b134.__action_status__","label":"5 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"67e72342-259f-4535-9df5-9de61e09b134.email","label":"5 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fb7875ec-f840-4f46-89ca-890cd0c02a82.__dont_treat_as_error__","label":"5 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fb7875ec-f840-4f46-89ca-890cd0c02a82.__action_status__","label":"5 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"fb7875ec-f840-4f46-89ca-890cd0c02a82.Table","label":"5 - Create Task➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fb7875ec-f840-4f46-89ca-890cd0c02a82.Record","label":"5 - Create Task➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Business Card Requests Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Business Card Requests Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_business_c_0_business_card_requests","column_name":"opened_by"},{"name":"Created_1.current","label":"Trigger - Record Created➛Business Card Requests Record","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"reference","base_type":"reference","attributes":{}},{"name":"e6006248-d3d6-4396-a84d-e9d022d6fa62.__dont_treat_as_error__","label":"1 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e6006248-d3d6-4396-a84d-e9d022d6fa62.__action_status__","label":"1 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e6006248-d3d6-4396-a84d-e9d022d6fa62.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43898304-ec66-4e42-937c-2c2810d51b08.Record","label":"4 - Create Task➛Ticket Record","reference":"ticket","reference_display":"Ticket","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43898304-ec66-4e42-937c-2c2810d51b08.Table","label":"4 - Create Task➛Ticket Table","reference":"ticket","reference_display":"Ticket","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43898304-ec66-4e42-937c-2c2810d51b08.__action_status__","label":"4 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43898304-ec66-4e42-937c-2c2810d51b08.__dont_treat_as_error__","label":"4 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76126f0a-f5d4-4933-94eb-6032736cedbd.email","label":"3 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76126f0a-f5d4-4933-94eb-6032736cedbd.__action_status__","label":"3 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76126f0a-f5d4-4933-94eb-6032736cedbd.__dont_treat_as_error__","label":"3 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.email","label":"Trigger - Record Created➛Business Card Requests Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by.name","label":"Trigger - Record Created➛Business Card Requests Record➛Opened by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"}]</label_cache>
+        <master_snapshot>3dc7ccf4b0c431107f44000c31ee6e7b</master_snapshot>
+        <name>Business Card Request</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>bab214bcb00831107f44000c31ee6ea1</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:21:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>73643360b08431107f44000c31ee6e63</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Business Card Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name>sys_hub_flow_73643360b08431107f44000c31ee6e63</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=73643360b08431107f44000c31ee6e63"/>
+    <sys_variable_value action="delete_multiple" query="document_key=73643360b08431107f44000c31ee6e63"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_business_c_0_business_card_requests">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bab214bcb00831107f44000c31ee6ea1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:48</sys_updated_on>
+        <table>x_snc_business_c_0_business_card_requests</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>73643360b08431107f44000c31ee6e63</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:48</sys_created_on>
+        <sys_id>76b214bcb00831107f44000c31ee6ea2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:48</sys_updated_on>
+        <trigger display_value="">bab214bcb00831107f44000c31ee6ea1</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=73643360b08431107f44000c31ee6e63^sys_idNOT IN76b214bcb00831107f44000c31ee6ea2"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=73643360b08431107f44000c31ee6e63^sys_idNOT IN87c43f60b08431107f44000c31ee6e4b"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:23:01</sys_created_on>
+        <sys_id>87c43f60b08431107f44000c31ee6e4b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:48</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=87c43f60b08431107f44000c31ee6e4b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>87c43f60b08431107f44000c31ee6e4b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:23:01</sys_created_on>
+        <sys_id>03c43f60b08431107f44000c31ee6e4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 15:23:01</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>87c43f60b08431107f44000c31ee6e4b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:23:01</sys_created_on>
+        <sys_id>c7c43f60b08431107f44000c31ee6e4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 15:23:01</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=73643360b08431107f44000c31ee6e63"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=73643360b08431107f44000c31ee6e63^sys_idNOT INb3643360b08431107f44000c31ee6e65"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>73643360b08431107f44000c31ee6e63</id>
+        <name>Business Card Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:21:25</sys_created_on>
+        <sys_id>b3643360b08431107f44000c31ee6e65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 15:21:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b3643360b08431107f44000c31ee6e65"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=73643360b08431107f44000c31ee6e63^sys_idNOT IN47c43360b08431107f44000c31ee6e4d,4fc43f60b08431107f44000c31ee6e45"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Business Card Request">73643360b08431107f44000c31ee6e63</model>
+        <model_id>73643360b08431107f44000c31ee6e63</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_73643360b08431107f44000c31ee6e63</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:23:01</sys_created_on>
+        <sys_id>47c43360b08431107f44000c31ee6e4d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Business Card Request">73643360b08431107f44000c31ee6e63</model>
+        <model_id>73643360b08431107f44000c31ee6e63</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_73643360b08431107f44000c31ee6e63</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:23:01</sys_created_on>
+        <sys_id>4fc43f60b08431107f44000c31ee6e45</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=73643360b08431107f44000c31ee6e63"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=73643360b08431107f44000c31ee6e63"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=73643360b08431107f44000c31ee6e63^sys_idNOT IN11a21c7cb00831107f44000c31ee6eea,64e40834b0c431107f44000c31ee6e0a,68e40834b0c431107f44000c31ee6e1f,81a21c7cb00831107f44000c31ee6ec2,cf9300f0b0c431107f44000c31ee6eaf,d18748f4b0c431107f44000c31ee6e73,d58748f4b0c431107f44000c31ee6e64"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <order>9</order>
+        <parent_ui_id>15437756-e056-4975-a025-a9a990d2afcc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>11a21c7cb00831107f44000c31ee6eea</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <ui_id>5d6d3e62-0bc9-4178-89f1-5d0fea1a681f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11a21c7cb00831107f44000c31ee6eea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>11a21c7cb00831107f44000c31ee6eea</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>1da21c7cb00831107f44000c31ee6eeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>11a21c7cb00831107f44000c31ee6eea</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>59a21c7cb00831107f44000c31ee6eeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <value>state=4</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=11a21c7cb00831107f44000c31ee6eea"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>11a21c7cb00831107f44000c31ee6eea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>d5a21c7cb00831107f44000c31ee6eeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>11a21c7cb00831107f44000c31ee6eea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>51a21c7cb00831107f44000c31ee6eeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>11a21c7cb00831107f44000c31ee6eea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>15a21c7cb00831107f44000c31ee6eeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=11a21c7cb00831107f44000c31ee6eea"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=11a21c7cb00831107f44000c31ee6eea"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <order>4</order>
+        <parent_ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>64e40834b0c431107f44000c31ee6e0a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <ui_id>43898304-ec66-4e42-937c-2c2810d51b08</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=64e40834b0c431107f44000c31ee6e0a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64e40834b0c431107f44000c31ee6e0a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>a8e40834b0c431107f44000c31ee6e0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <value>ticket</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64e40834b0c431107f44000c31ee6e0a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>dd8748f4b0c431107f44000c31ee6e5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait">ff3a6335531003003bf1d9109ec58777</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=64e40834b0c431107f44000c31ee6e0a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>64e40834b0c431107f44000c31ee6e0a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>28e40834b0c431107f44000c31ee6e0c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>parent={{Created_1.current}}^short_description=Print business cards and ship^assigned_to={"display":"System Administrator","value":"6816f79cc0a8016401c5a33be04be441","table":"sys_user","sys_id":"6816f79cc0a8016401c5a33be04be441"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>64e40834b0c431107f44000c31ee6e0a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>20e40834b0c431107f44000c31ee6e0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>64e40834b0c431107f44000c31ee6e0a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>dd8748f4b0c431107f44000c31ee6e5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=64e40834b0c431107f44000c31ee6e0a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64e40834b0c431107f44000c31ee6e0a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <order>3</order>
+        <parent_ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>68e40834b0c431107f44000c31ee6e1f</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <ui_id>76126f0a-f5d4-4933-94eb-6032736cedbd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=68e40834b0c431107f44000c31ee6e1f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>68e40834b0c431107f44000c31ee6e1f</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>20e40834b0c431107f44000c31ee6e23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <value>You Business Card request has been approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>68e40834b0c431107f44000c31ee6e1f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>6ce40834b0c431107f44000c31ee6e22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>68e40834b0c431107f44000c31ee6e1f</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>a8e40834b0c431107f44000c31ee6e22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=68e40834b0c431107f44000c31ee6e1f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>68e40834b0c431107f44000c31ee6e1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>ece40834b0c431107f44000c31ee6e21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:47f9a047-c734-4a0e-983f-9a68b79b7e3c}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:47f9a047-c734-4a0e-983f-9a68b79b7e3c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Business Card Requests Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_47f9a047-c734-4a0e-983f-9a68b79b7e3c" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Your Business Card request has been approved and will be sent to the printers.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>68e40834b0c431107f44000c31ee6e1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>28e40834b0c431107f44000c31ee6e22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>68e40834b0c431107f44000c31ee6e1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>2ce40834b0c431107f44000c31ee6e21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>68e40834b0c431107f44000c31ee6e1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>a0e40834b0c431107f44000c31ee6e22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>68e40834b0c431107f44000c31ee6e1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>64e40834b0c431107f44000c31ee6e22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=68e40834b0c431107f44000c31ee6e1f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=68e40834b0c431107f44000c31ee6e1f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <order>6</order>
+        <parent_ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>81a21c7cb00831107f44000c31ee6ec2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <ui_id>c8b28d14-f958-46ac-ac0c-c92842a4c58a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=81a21c7cb00831107f44000c31ee6ec2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81a21c7cb00831107f44000c31ee6ec2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>99a21c7cb00831107f44000c31ee6ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81a21c7cb00831107f44000c31ee6ec2</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>d1a21c7cb00831107f44000c31ee6ec5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=81a21c7cb00831107f44000c31ee6ec2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>81a21c7cb00831107f44000c31ee6ec2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>19a21c7cb00831107f44000c31ee6ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>81a21c7cb00831107f44000c31ee6ec2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>4da21c7cb00831107f44000c31ee6ec3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>81a21c7cb00831107f44000c31ee6ec2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:25</sys_created_on>
+        <sys_id>55a21c7cb00831107f44000c31ee6ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=81a21c7cb00831107f44000c31ee6ec2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=81a21c7cb00831107f44000c31ee6ec2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>cf9300f0b0c431107f44000c31ee6eaf</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:48</sys_updated_on>
+        <ui_id>e6006248-d3d6-4396-a84d-e9d022d6fa62</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cf9300f0b0c431107f44000c31ee6eaf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cf9300f0b0c431107f44000c31ee6eaf</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>1f9300f0b0c431107f44000c31ee6eb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cf9300f0b0c431107f44000c31ee6eaf</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>5b9300f0b0c431107f44000c31ee6eb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cf9300f0b0c431107f44000c31ee6eaf</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>5f9300f0b0c431107f44000c31ee6eb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cf9300f0b0c431107f44000c31ee6eaf</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>979300f0b0c431107f44000c31ee6eb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cf9300f0b0c431107f44000c31ee6eaf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>cf9300f0b0c431107f44000c31ee6eaf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>1b9300f0b0c431107f44000c31ee6eb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{Created_1.current.opened_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>cf9300f0b0c431107f44000c31ee6eaf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>c79300f0b0c431107f44000c31ee6eb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>cf9300f0b0c431107f44000c31ee6eaf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>579300f0b0c431107f44000c31ee6eb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>cf9300f0b0c431107f44000c31ee6eaf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>cf9300f0b0c431107f44000c31ee6eb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>cf9300f0b0c431107f44000c31ee6eaf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>939300f0b0c431107f44000c31ee6eb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>cf9300f0b0c431107f44000c31ee6eaf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>db9300f0b0c431107f44000c31ee6eb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cf9300f0b0c431107f44000c31ee6eaf"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cf9300f0b0c431107f44000c31ee6eaf"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <order>8</order>
+        <parent_ui_id>15437756-e056-4975-a025-a9a990d2afcc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>d18748f4b0c431107f44000c31ee6e73</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <ui_id>ff27291e-ef90-47da-b609-fa3805b17693</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d18748f4b0c431107f44000c31ee6e73"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d18748f4b0c431107f44000c31ee6e73</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>1d8748f4b0c431107f44000c31ee6e75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d18748f4b0c431107f44000c31ee6e73</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>918748f4b0c431107f44000c31ee6e76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <value>Your Business Card request has been rejected</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d18748f4b0c431107f44000c31ee6e73</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>dd8748f4b0c431107f44000c31ee6e75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d18748f4b0c431107f44000c31ee6e73"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d18748f4b0c431107f44000c31ee6e73</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>518748f4b0c431107f44000c31ee6e75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:40c487a6-13c7-4397-81f5-d843ad830ccb}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:40c487a6-13c7-4397-81f5-d843ad830ccb}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Business Card Requests Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_40c487a6-13c7-4397-81f5-d843ad830ccb" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; your request has been rejected.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Please submit a new request.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d18748f4b0c431107f44000c31ee6e73</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>998748f4b0c431107f44000c31ee6e75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d18748f4b0c431107f44000c31ee6e73</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>9d8748f4b0c431107f44000c31ee6e74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d18748f4b0c431107f44000c31ee6e73</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>158748f4b0c431107f44000c31ee6e75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d18748f4b0c431107f44000c31ee6e73</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>d58748f4b0c431107f44000c31ee6e75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d18748f4b0c431107f44000c31ee6e73"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d18748f4b0c431107f44000c31ee6e73"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <order>5</order>
+        <parent_ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>d58748f4b0c431107f44000c31ee6e64</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <ui_id>67e72342-259f-4535-9df5-9de61e09b134</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d58748f4b0c431107f44000c31ee6e64"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d58748f4b0c431107f44000c31ee6e64</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>1d8748f4b0c431107f44000c31ee6e67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d58748f4b0c431107f44000c31ee6e64</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>598748f4b0c431107f44000c31ee6e67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d58748f4b0c431107f44000c31ee6e64</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>dd8748f4b0c431107f44000c31ee6e67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <value>Your Business Cards have been shipped</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d58748f4b0c431107f44000c31ee6e64"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d58748f4b0c431107f44000c31ee6e64</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>9d8748f4b0c431107f44000c31ee6e66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:00ff4a10-e3c8-44d2-adc6-c73d22cec4d8}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:00ff4a10-e3c8-44d2-adc6-c73d22cec4d8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Business Card Requests Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_00ff4a10-e3c8-44d2-adc6-c73d22cec4d8" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Your Business Cards have been shipped to&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:041899f5-0bc1-4627-be68-9eb3308ff225}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:041899f5-0bc1-4627-be68-9eb3308ff225}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Business Card Requests Record &amp;gt; Address"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Address&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_041899f5-0bc1-4627-be68-9eb3308ff225" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Please be on look out for your cards in the mail.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank You&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d58748f4b0c431107f44000c31ee6e64</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>d58748f4b0c431107f44000c31ee6e67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d58748f4b0c431107f44000c31ee6e64</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>d98748f4b0c431107f44000c31ee6e66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d58748f4b0c431107f44000c31ee6e64</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>518748f4b0c431107f44000c31ee6e67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d58748f4b0c431107f44000c31ee6e64</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>158748f4b0c431107f44000c31ee6e67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d58748f4b0c431107f44000c31ee6e64"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d58748f4b0c431107f44000c31ee6e64"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=73643360b08431107f44000c31ee6e63"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=73643360b08431107f44000c31ee6e63^sys_idNOT IN598748f4b0c431107f44000c31ee6e69,9b9300f0b0c431107f44000c31ee6eb6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9d8748f4b0c431107f44000c31ee6e68</block>
+        <comment/>
+        <connected_to>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>598748f4b0c431107f44000c31ee6e69</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <ui_id>15437756-e056-4975-a025-a9a990d2afcc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=598748f4b0c431107f44000c31ee6e69"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>598748f4b0c431107f44000c31ee6e69</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>518748f4b0c431107f44000c31ee6e6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <value>If manager rejects</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=598748f4b0c431107f44000c31ee6e69"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>598748f4b0c431107f44000c31ee6e69</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>dd8748f4b0c431107f44000c31ee6e6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{e6006248-d3d6-4396-a84d-e9d022d6fa62.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>598748f4b0c431107f44000c31ee6e69</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>1d8748f4b0c431107f44000c31ee6e6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=598748f4b0c431107f44000c31ee6e69"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=598748f4b0c431107f44000c31ee6e69"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">db9300f0b0c431107f44000c31ee6eb5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>9b9300f0b0c431107f44000c31ee6eb6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:49</sys_updated_on>
+        <ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9b9300f0b0c431107f44000c31ee6eb6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>9b9300f0b0c431107f44000c31ee6eb6</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>5f9300f0b0c431107f44000c31ee6eba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <value>Manager approves</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9b9300f0b0c431107f44000c31ee6eb6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>9b9300f0b0c431107f44000c31ee6eb6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>db9300f0b0c431107f44000c31ee6eba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{e6006248-d3d6-4396-a84d-e9d022d6fa62.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>9b9300f0b0c431107f44000c31ee6eb6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:27:45</sys_created_on>
+        <sys_id>1b9300f0b0c431107f44000c31ee6eba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:27:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9b9300f0b0c431107f44000c31ee6eb6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9b9300f0b0c431107f44000c31ee6eb6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=73643360b08431107f44000c31ee6e63^sys_idNOT IN158748f4b0c431107f44000c31ee6e79,518748f4b0c431107f44000c31ee6e79,64e40834b0c431107f44000c31ee6e25,958748f4b0c431107f44000c31ee6e78,9d8748f4b0c431107f44000c31ee6e78"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>73643360b08431107f44000c31ee6e63</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>158748f4b0c431107f44000c31ee6e79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>40c487a6-13c7-4397-81f5-d843ad830ccb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>73643360b08431107f44000c31ee6e63</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.address_1}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>518748f4b0c431107f44000c31ee6e79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>041899f5-0bc1-4627-be68-9eb3308ff225</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>73643360b08431107f44000c31ee6e63</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:33:18</sys_created_on>
+        <sys_id>64e40834b0c431107f44000c31ee6e25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:33:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>47f9a047-c734-4a0e-983f-9a68b79b7e3c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>73643360b08431107f44000c31ee6e63</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>958748f4b0c431107f44000c31ee6e78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>00ff4a10-e3c8-44d2-adc6-c73d22cec4d8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>73643360b08431107f44000c31ee6e63</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.address_1}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:44:49</sys_created_on>
+        <sys_id>9d8748f4b0c431107f44000c31ee6e78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:44:49</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8fe2cef9-5f16-4355-a96c-7e6beb5cf113</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=73643360b08431107f44000c31ee6e63"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_73643360b08431107f44000c31ee6e63^sys_idNOT IN83c43f60b08431107f44000c31ee6e48,8fc43f60b08431107f44000c31ee6e44"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_73643360b08431107f44000c31ee6e63</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:23:01</sys_created_on>
+        <sys_id>83c43f60b08431107f44000c31ee6e48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 15:23:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_73643360b08431107f44000c31ee6e63</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 15:23:01</sys_created_on>
+        <sys_id>8fc43f60b08431107f44000c31ee6e44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 15:23:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_73643360b08431107f44000c31ee6e63"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_73643360b08431107f44000c31ee6e63"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_73643360b08431107f44000c31ee6e63"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=73643360b08431107f44000c31ee6e63^sys_idNOT IN7ac74038b0c431107f44000c31ee6e2b"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"7ac74038b0c431107f44000c31ee6e2b","name":"plan","plan_signature":null}}</plan>
+        <plan_id>73643360b08431107f44000c31ee6e63</plan_id>
+        <snapshot>3dc7ccf4b0c431107f44000c31ee6e7b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:46:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ac74038b0c431107f44000c31ee6e2b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:48</sys_updated_on>
+        <trigger display_value="">bab214bcb00831107f44000c31ee6ea1</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=73643360b08431107f44000c31ee6e63"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>BCR Flow</description>
+        <internal_name>business_card_request</internal_name>
+        <label_cache>[{"name":"5d6d3e62-0bc9-4178-89f1-5d0fea1a681f.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"5d6d3e62-0bc9-4178-89f1-5d0fea1a681f.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"5d6d3e62-0bc9-4178-89f1-5d0fea1a681f.table_name","label":"9 - Update Record➛Business Card Requests Table","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5d6d3e62-0bc9-4178-89f1-5d0fea1a681f.record","label":"9 - Update Record➛Business Card Requests Record","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c8b28d14-f958-46ac-ac0c-c92842a4c58a.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c8b28d14-f958-46ac-ac0c-c92842a4c58a.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c8b28d14-f958-46ac-ac0c-c92842a4c58a.table_name","label":"6 - Update Record➛Business Card Requests Table","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c8b28d14-f958-46ac-ac0c-c92842a4c58a.record","label":"6 - Update Record➛Business Card Requests Record","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff27291e-ef90-47da-b609-fa3805b17693.__dont_treat_as_error__","label":"8 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff27291e-ef90-47da-b609-fa3805b17693.__action_status__","label":"8 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff27291e-ef90-47da-b609-fa3805b17693.email","label":"8 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ed3da04-a67d-4678-9bba-d8f263379681.__dont_treat_as_error__","label":"7 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"5ed3da04-a67d-4678-9bba-d8f263379681.__action_status__","label":"7 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"5ed3da04-a67d-4678-9bba-d8f263379681.Table","label":"7 - Create Task➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ed3da04-a67d-4678-9bba-d8f263379681.Record","label":"7 - Create Task➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.address_1","label":"Trigger - Record Created➛Business Card Requests Record➛Address","reference":"","reference_display":"Address","type":"string","base_type":"string","parent_table_name":"x_snc_business_c_0_business_card_requests","column_name":"address_1"},{"name":"67e72342-259f-4535-9df5-9de61e09b134.__dont_treat_as_error__","label":"5 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"67e72342-259f-4535-9df5-9de61e09b134.__action_status__","label":"5 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"67e72342-259f-4535-9df5-9de61e09b134.email","label":"5 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fb7875ec-f840-4f46-89ca-890cd0c02a82.__dont_treat_as_error__","label":"5 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fb7875ec-f840-4f46-89ca-890cd0c02a82.__action_status__","label":"5 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"fb7875ec-f840-4f46-89ca-890cd0c02a82.Table","label":"5 - Create Task➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fb7875ec-f840-4f46-89ca-890cd0c02a82.Record","label":"5 - Create Task➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Business Card Requests Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Business Card Requests Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_business_c_0_business_card_requests","column_name":"opened_by"},{"name":"Created_1.current","label":"Trigger - Record Created➛Business Card Requests Record","reference":"x_snc_business_c_0_business_card_requests","reference_display":"Business Card Requests","type":"reference","base_type":"reference","attributes":{}},{"name":"e6006248-d3d6-4396-a84d-e9d022d6fa62.__dont_treat_as_error__","label":"1 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e6006248-d3d6-4396-a84d-e9d022d6fa62.__action_status__","label":"1 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e6006248-d3d6-4396-a84d-e9d022d6fa62.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43898304-ec66-4e42-937c-2c2810d51b08.Record","label":"4 - Create Task➛Ticket Record","reference":"ticket","reference_display":"Ticket","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43898304-ec66-4e42-937c-2c2810d51b08.Table","label":"4 - Create Task➛Ticket Table","reference":"ticket","reference_display":"Ticket","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43898304-ec66-4e42-937c-2c2810d51b08.__action_status__","label":"4 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43898304-ec66-4e42-937c-2c2810d51b08.__dont_treat_as_error__","label":"4 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76126f0a-f5d4-4933-94eb-6032736cedbd.email","label":"3 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76126f0a-f5d4-4933-94eb-6032736cedbd.__action_status__","label":"3 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76126f0a-f5d4-4933-94eb-6032736cedbd.__dont_treat_as_error__","label":"3 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.email","label":"Trigger - Record Created➛Business Card Requests Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by.name","label":"Trigger - Record Created➛Business Card Requests Record➛Opened by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"}]</label_cache>
+        <master>true</master>
+        <name>Business Card Request</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Business Card Request">73643360b08431107f44000c31ee6e63</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3dc7ccf4b0c431107f44000c31ee6e7b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=3dc7ccf4b0c431107f44000c31ee6e7b^sys_idNOT IN16c70038b0c431107f44000c31ee6e5c"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>16c70038b0c431107f44000c31ee6e5c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:48</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=16c70038b0c431107f44000c31ee6e5c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>16c70038b0c431107f44000c31ee6e5c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>52c70038b0c431107f44000c31ee6e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>16c70038b0c431107f44000c31ee6e5c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>9ec70038b0c431107f44000c31ee6e5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3dc7ccf4b0c431107f44000c31ee6e7b^sys_idNOT IN31c7ccf4b0c431107f44000c31ee6e7d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3dc7ccf4b0c431107f44000c31ee6e7b</id>
+        <name>Business Card Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>31c7ccf4b0c431107f44000c31ee6e7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=31c7ccf4b0c431107f44000c31ee6e7d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3dc7ccf4b0c431107f44000c31ee6e7b^sys_idNOT INc2c7ccf4b0c431107f44000c31ee6ea8,f5c7ccf4b0c431107f44000c31ee6e7e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</model>
+        <model_id>3dc7ccf4b0c431107f44000c31ee6e7b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3dc7ccf4b0c431107f44000c31ee6e7b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>c2c7ccf4b0c431107f44000c31ee6ea8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</model>
+        <model_id>3dc7ccf4b0c431107f44000c31ee6e7b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3dc7ccf4b0c431107f44000c31ee6e7b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>f5c7ccf4b0c431107f44000c31ee6e7e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=3dc7ccf4b0c431107f44000c31ee6e7b^sys_idNOT IN0ac7ccf4b0c431107f44000c31ee6ecf,12c7ccf4b0c431107f44000c31ee6ef9,2db290bcb00831107f44000c31ee6ecb,52c70038b0c431107f44000c31ee6e59,c2c7ccf4b0c431107f44000c31ee6ef1,c6c7ccf4b0c431107f44000c31ee6edb,e9b290bcb00831107f44000c31ee6ec2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>0ac7ccf4b0c431107f44000c31ee6ecf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>e6006248-d3d6-4396-a84d-e9d022d6fa62</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0ac7ccf4b0c431107f44000c31ee6ecf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0ac7ccf4b0c431107f44000c31ee6ecf</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>0ac7ccf4b0c431107f44000c31ee6ed2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0ac7ccf4b0c431107f44000c31ee6ecf</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>46c7ccf4b0c431107f44000c31ee6ed2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0ac7ccf4b0c431107f44000c31ee6ecf</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>8ec7ccf4b0c431107f44000c31ee6ed2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0ac7ccf4b0c431107f44000c31ee6ecf</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>cac7ccf4b0c431107f44000c31ee6ed2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0ac7ccf4b0c431107f44000c31ee6ecf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>0ac7ccf4b0c431107f44000c31ee6ecf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>02c7ccf4b0c431107f44000c31ee6ed2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{Created_1.current.opened_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>0ac7ccf4b0c431107f44000c31ee6ecf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>06c7ccf4b0c431107f44000c31ee6ed1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>0ac7ccf4b0c431107f44000c31ee6ecf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>4ec7ccf4b0c431107f44000c31ee6ed1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>0ac7ccf4b0c431107f44000c31ee6ecf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>c6c7ccf4b0c431107f44000c31ee6ed1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0ac7ccf4b0c431107f44000c31ee6ecf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>8ac7ccf4b0c431107f44000c31ee6ed1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0ac7ccf4b0c431107f44000c31ee6ecf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>c2c7ccf4b0c431107f44000c31ee6ed2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0ac7ccf4b0c431107f44000c31ee6ecf"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0ac7ccf4b0c431107f44000c31ee6ecf"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <order>5</order>
+        <parent_ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>12c7ccf4b0c431107f44000c31ee6ef9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>67e72342-259f-4535-9df5-9de61e09b134</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=12c7ccf4b0c431107f44000c31ee6ef9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12c7ccf4b0c431107f44000c31ee6ef9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>1ec7ccf4b0c431107f44000c31ee6efb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12c7ccf4b0c431107f44000c31ee6ef9</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>5ac7ccf4b0c431107f44000c31ee6efb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12c7ccf4b0c431107f44000c31ee6ef9</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>dec7ccf4b0c431107f44000c31ee6efb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <value>Your Business Cards have been shipped</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=12c7ccf4b0c431107f44000c31ee6ef9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>12c7ccf4b0c431107f44000c31ee6ef9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>9ec7ccf4b0c431107f44000c31ee6efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:00ff4a10-e3c8-44d2-adc6-c73d22cec4d8}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:00ff4a10-e3c8-44d2-adc6-c73d22cec4d8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Business Card Requests Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_00ff4a10-e3c8-44d2-adc6-c73d22cec4d8" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Your Business Cards have been shipped to&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:041899f5-0bc1-4627-be68-9eb3308ff225}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:041899f5-0bc1-4627-be68-9eb3308ff225}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Business Card Requests Record &amp;gt; Address"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Address&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_041899f5-0bc1-4627-be68-9eb3308ff225" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Please be on look out for your cards in the mail.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank You&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>12c7ccf4b0c431107f44000c31ee6ef9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>d6c7ccf4b0c431107f44000c31ee6efb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>12c7ccf4b0c431107f44000c31ee6ef9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>dac7ccf4b0c431107f44000c31ee6efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>12c7ccf4b0c431107f44000c31ee6ef9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>52c7ccf4b0c431107f44000c31ee6efb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>12c7ccf4b0c431107f44000c31ee6ef9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>16c7ccf4b0c431107f44000c31ee6efb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=12c7ccf4b0c431107f44000c31ee6ef9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=12c7ccf4b0c431107f44000c31ee6ef9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <order>9</order>
+        <parent_ui_id>15437756-e056-4975-a025-a9a990d2afcc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>2db290bcb00831107f44000c31ee6ecb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>5d6d3e62-0bc9-4178-89f1-5d0fea1a681f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2db290bcb00831107f44000c31ee6ecb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2db290bcb00831107f44000c31ee6ecb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>29b290bcb00831107f44000c31ee6ecd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2db290bcb00831107f44000c31ee6ecb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>65b290bcb00831107f44000c31ee6ecd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <value>state=4</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2db290bcb00831107f44000c31ee6ecb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2db290bcb00831107f44000c31ee6ecb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>e1b290bcb00831107f44000c31ee6ecd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2db290bcb00831107f44000c31ee6ecb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>6db290bcb00831107f44000c31ee6ecc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>2db290bcb00831107f44000c31ee6ecb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>21b290bcb00831107f44000c31ee6ecd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2db290bcb00831107f44000c31ee6ecb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2db290bcb00831107f44000c31ee6ecb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <order>8</order>
+        <parent_ui_id>15437756-e056-4975-a025-a9a990d2afcc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>52c70038b0c431107f44000c31ee6e59</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>ff27291e-ef90-47da-b609-fa3805b17693</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=52c70038b0c431107f44000c31ee6e59"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>52c70038b0c431107f44000c31ee6e59</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>12c70038b0c431107f44000c31ee6e5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <value>Your Business Card request has been rejected</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>52c70038b0c431107f44000c31ee6e59</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>5ec70038b0c431107f44000c31ee6e5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>52c70038b0c431107f44000c31ee6e59</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>9ac70038b0c431107f44000c31ee6e5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=52c70038b0c431107f44000c31ee6e59"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>52c70038b0c431107f44000c31ee6e59</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>dec70038b0c431107f44000c31ee6e5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:40c487a6-13c7-4397-81f5-d843ad830ccb}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:40c487a6-13c7-4397-81f5-d843ad830ccb}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Business Card Requests Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_40c487a6-13c7-4397-81f5-d843ad830ccb" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; your request has been rejected.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Please submit a new request.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>52c70038b0c431107f44000c31ee6e59</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>1ac70038b0c431107f44000c31ee6e5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>52c70038b0c431107f44000c31ee6e59</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>1ec70038b0c431107f44000c31ee6e5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>52c70038b0c431107f44000c31ee6e59</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>92c70038b0c431107f44000c31ee6e5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>52c70038b0c431107f44000c31ee6e59</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>56c70038b0c431107f44000c31ee6e5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=52c70038b0c431107f44000c31ee6e59"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=52c70038b0c431107f44000c31ee6e59"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <order>4</order>
+        <parent_ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>c2c7ccf4b0c431107f44000c31ee6ef1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>43898304-ec66-4e42-937c-2c2810d51b08</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c2c7ccf4b0c431107f44000c31ee6ef1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c2c7ccf4b0c431107f44000c31ee6ef1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>0ec7ccf4b0c431107f44000c31ee6ef2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait">ff3a6335531003003bf1d9109ec58777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c2c7ccf4b0c431107f44000c31ee6ef1</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>cec7ccf4b0c431107f44000c31ee6ef2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value>ticket</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c2c7ccf4b0c431107f44000c31ee6ef1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>c2c7ccf4b0c431107f44000c31ee6ef1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>8ac7ccf4b0c431107f44000c31ee6ef2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>parent={{Created_1.current}}^short_description=Print business cards and ship^assigned_to={"display":"System Administrator","value":"6816f79cc0a8016401c5a33be04be441","table":"sys_user","sys_id":"6816f79cc0a8016401c5a33be04be441"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>c2c7ccf4b0c431107f44000c31ee6ef1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>c6c7ccf4b0c431107f44000c31ee6ef2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>c2c7ccf4b0c431107f44000c31ee6ef1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>06c7ccf4b0c431107f44000c31ee6ef2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c2c7ccf4b0c431107f44000c31ee6ef1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c2c7ccf4b0c431107f44000c31ee6ef1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <order>3</order>
+        <parent_ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>c6c7ccf4b0c431107f44000c31ee6edb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>76126f0a-f5d4-4933-94eb-6032736cedbd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6c7ccf4b0c431107f44000c31ee6edb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6c7ccf4b0c431107f44000c31ee6edb</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>02c7ccf4b0c431107f44000c31ee6ede</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6c7ccf4b0c431107f44000c31ee6edb</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>86c7ccf4b0c431107f44000c31ee6ede</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value>You Business Card request has been approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6c7ccf4b0c431107f44000c31ee6edb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>c2c7ccf4b0c431107f44000c31ee6ede</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6c7ccf4b0c431107f44000c31ee6edb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>c6c7ccf4b0c431107f44000c31ee6edb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>46c7ccf4b0c431107f44000c31ee6edd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:47f9a047-c734-4a0e-983f-9a68b79b7e3c}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:47f9a047-c734-4a0e-983f-9a68b79b7e3c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Business Card Requests Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_47f9a047-c734-4a0e-983f-9a68b79b7e3c" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Your Business Card request has been approved and will be sent to the printers.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>c6c7ccf4b0c431107f44000c31ee6edb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>8ec7ccf4b0c431107f44000c31ee6edd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>c6c7ccf4b0c431107f44000c31ee6edb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>82c7ccf4b0c431107f44000c31ee6edd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c6c7ccf4b0c431107f44000c31ee6edb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>0ac7ccf4b0c431107f44000c31ee6edd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c6c7ccf4b0c431107f44000c31ee6edb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>cac7ccf4b0c431107f44000c31ee6edd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c6c7ccf4b0c431107f44000c31ee6edb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c6c7ccf4b0c431107f44000c31ee6edb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <order>6</order>
+        <parent_ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>e9b290bcb00831107f44000c31ee6ec2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>c8b28d14-f958-46ac-ac0c-c92842a4c58a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e9b290bcb00831107f44000c31ee6ec2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e9b290bcb00831107f44000c31ee6ec2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>a1b290bcb00831107f44000c31ee6ec5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e9b290bcb00831107f44000c31ee6ec2</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>a9b290bcb00831107f44000c31ee6ec5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <value>x_snc_business_c_0_business_card_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e9b290bcb00831107f44000c31ee6ec2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e9b290bcb00831107f44000c31ee6ec2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>21b290bcb00831107f44000c31ee6ec5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e9b290bcb00831107f44000c31ee6ec2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>65b290bcb00831107f44000c31ee6ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e9b290bcb00831107f44000c31ee6ec2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 17:33:43</sys_created_on>
+        <sys_id>6db290bcb00831107f44000c31ee6ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e9b290bcb00831107f44000c31ee6ec2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e9b290bcb00831107f44000c31ee6ec2"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=3dc7ccf4b0c431107f44000c31ee6e7b^sys_idNOT IN4ec7ccf4b0c431107f44000c31ee6ec4,8ec7ccf4b0c431107f44000c31ee6ebf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9d8748f4b0c431107f44000c31ee6e68</block>
+        <comment/>
+        <connected_to>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>4ec7ccf4b0c431107f44000c31ee6ec4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>15437756-e056-4975-a025-a9a990d2afcc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4ec7ccf4b0c431107f44000c31ee6ec4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4ec7ccf4b0c431107f44000c31ee6ec4</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>46c7ccf4b0c431107f44000c31ee6ec8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <value>If manager rejects</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ec7ccf4b0c431107f44000c31ee6ec4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4ec7ccf4b0c431107f44000c31ee6ec4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>c2c7ccf4b0c431107f44000c31ee6ec8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{e6006248-d3d6-4396-a84d-e9d022d6fa62.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4ec7ccf4b0c431107f44000c31ee6ec4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:58</sys_created_on>
+        <sys_id>02c7ccf4b0c431107f44000c31ee6ec8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:58</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4ec7ccf4b0c431107f44000c31ee6ec4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ec7ccf4b0c431107f44000c31ee6ec4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">db9300f0b0c431107f44000c31ee6eb5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Business Card Request">3dc7ccf4b0c431107f44000c31ee6e7b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>8ec7ccf4b0c431107f44000c31ee6ebf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 17:33:44</sys_updated_on>
+        <ui_id>9a3c21ff-c5c8-4257-a4d6-d37ecec75526</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8ec7ccf4b0c431107f44000c31ee6ebf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8ec7ccf4b0c431107f44000c31ee6ebf</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>cec7ccf4b0c431107f44000c31ee6ec3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:57</sys_updated_on>
+        <value>Manager approves</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8ec7ccf4b0c431107f44000c31ee6ebf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8ec7ccf4b0c431107f44000c31ee6ebf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>4ec7ccf4b0c431107f44000c31ee6ec3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{e6006248-d3d6-4396-a84d-e9d022d6fa62.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>8ec7ccf4b0c431107f44000c31ee6ebf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>8ac7ccf4b0c431107f44000c31ee6ec3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8ec7ccf4b0c431107f44000c31ee6ebf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8ec7ccf4b0c431107f44000c31ee6ebf"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3dc7ccf4b0c431107f44000c31ee6e7b^sys_idNOT IN1ac70038b0c431107f44000c31ee6e5e,1ec70038b0c431107f44000c31ee6e5e,96c70038b0c431107f44000c31ee6e5e,9ac70038b0c431107f44000c31ee6e5e,9ec70038b0c431107f44000c31ee6e5e"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3dc7ccf4b0c431107f44000c31ee6e7b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>1ac70038b0c431107f44000c31ee6e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>47f9a047-c734-4a0e-983f-9a68b79b7e3c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3dc7ccf4b0c431107f44000c31ee6e7b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>1ec70038b0c431107f44000c31ee6e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>40c487a6-13c7-4397-81f5-d843ad830ccb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3dc7ccf4b0c431107f44000c31ee6e7b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.address_1}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>96c70038b0c431107f44000c31ee6e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>041899f5-0bc1-4627-be68-9eb3308ff225</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3dc7ccf4b0c431107f44000c31ee6e7b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>9ac70038b0c431107f44000c31ee6e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>00ff4a10-e3c8-44d2-adc6-c73d22cec4d8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3dc7ccf4b0c431107f44000c31ee6e7b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.address_1}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:59</sys_created_on>
+        <sys_id>9ec70038b0c431107f44000c31ee6e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8fe2cef9-5f16-4355-a96c-7e6beb5cf113</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3dc7ccf4b0c431107f44000c31ee6e7b^sys_idNOT IN35c7ccf4b0c431107f44000c31ee6ea4,4ac7ccf4b0c431107f44000c31ee6eac"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3dc7ccf4b0c431107f44000c31ee6e7b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>35c7ccf4b0c431107f44000c31ee6ea4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3dc7ccf4b0c431107f44000c31ee6e7b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-12 16:45:57</sys_created_on>
+        <sys_id>4ac7ccf4b0c431107f44000c31ee6eac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Business Card Requests" source="x_snc_business_c_0">844a97e0b00431107f44000c31ee6e3e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Business Card Requests">844a97e0b00431107f44000c31ee6e3e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-12 16:45:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3dc7ccf4b0c431107f44000c31ee6e7b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>73643360b08431107f44000c31ee6e63</sys_id>
+        <latest_snapshot>3dc7ccf4b0c431107f44000c31ee6e7b</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch3-10-26-2022_11-03-2022_2313.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>
