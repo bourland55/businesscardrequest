@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="a24b1b24b00431107f44000c31ee6e8a" extends="task" label="Business Card Requests" max_length="40" name="x_snc_business_c_0_business_card_requests" text_index="true" type="collection">
+        <element label="Address" max_length="32" name="address_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Name" max_length="32" name="name" reference="sys_user" type="reference"/>
+        <element label="Phone" max_length="32" name="phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Quantity" max_length="40" name="quantity" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="250 Cards (1 box)" sequence="0" value="cards_1_box"/>
+                <element inactive_on_update="false" label="500 Cards (2 boxes)" sequence="1" value="cards_2_boxes"/>
+            </choice>
+        </element>
+        <element label="Special Instructions" max_length="40" name="special_instructions" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Style" max_length="40" name="style" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Style 1" sequence="0" value="style_1"/>
+                <element inactive_on_update="false" label="Style 2" sequence="1" value="style_2"/>
+                <element inactive_on_update="false" label="Style 3" sequence="2" value="style_3"/>
+            </choice>
+        </element>
+    </element>
+</database>

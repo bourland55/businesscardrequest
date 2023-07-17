@@ -8,12 +8,12 @@
         <derived>true</derived>
         <field/>
         <label>Business Card Requests search profile Default Spell Check Dictionary</label>
-        <last_derived/>
+        <last_derived>2023-07-17 14:07:29</last_derived>
         <locale>en</locale>
         <name>x_snc_business_c_0_business_card_requests_search_profile_default_spell_check_dictionary</name>
-        <publish_id/>
+        <publish_id>d480093c-d4d3-489e-9e08-4362982f3c6e</publish_id>
         <punctuation_sensitive>false</punctuation_sensitive>
-        <state>NEW</state>
+        <state>PUBLISHED</state>
         <sys_class_name>ais_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-12 16:48:47</sys_created_on>
